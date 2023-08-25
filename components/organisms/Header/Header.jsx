@@ -7,9 +7,9 @@ function Header() {
 	return (
 		<header className={clsx(styles.header)}>
 			<Title url={'/'} type={'logo'}>
-				DCODELAB
+				ZeroPointMotion
 			</Title>
-			<Navbar names={['Find Recipe', 'My Favorait']} gap={80} />
+			{/* <Navbar names={['Find Recipe', 'My Favorait']} gap={80} /> */}
 		</header>
 	);
 }
