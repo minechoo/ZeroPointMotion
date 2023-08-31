@@ -32,4 +32,26 @@
 			}
 		}
 	}
+	.txt_ex {
+		padding: 0 10vw;
+		height: 410px;
+		overflow-y: auto;
+		text-align: justify;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.visual {
+		.swiper {
+			height: 50vh;
+		}
+	}
+}
+@media screen and (max-width: 420px) {
+	.visual {
+		.txt_ex {
+			padding: 0 10vw;
+			height: 250px;
+		}
+	}
 }

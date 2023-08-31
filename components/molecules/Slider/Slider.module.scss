@@ -22,3 +22,21 @@
 		}
 	}
 }
+
+@media screen and (max-width: 1000px) {
+	.slider {
+		width: 85%;
+		height: auto;
+
+		> div {
+			height: 37vh;
+		}
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.slider {
+		width: 80%;
+		top: 10vh;
+	}
+}

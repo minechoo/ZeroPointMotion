@@ -16,7 +16,9 @@ function SwiperWrap({ recipe, category }) {
 
 	return (
 		<figure className={clsx(styles.visual)}>
-			<Title style={{ position: 'absolute', top: '20vh', left: '10vw', fontSize: 50, color: 'orange' }}>
+			<Title
+				style={{ position: 'absolute', top: '20vh', left: '10vw', fontSize: 50, color: 'orange' }}
+			>
 				{category}
 			</Title>
 
@@ -44,7 +46,13 @@ function SwiperWrap({ recipe, category }) {
 					<SwiperSlide key={item.id} className={clsx(styles.swiperSlide)}>
 						{({ isActive, isPrev, isNext }) => {
 							return (
-								<div className={clsx(isActive && styles.on, isPrev && styles.prev, isNext && styles.next)}>
+								<div
+									className={clsx(
+										isActive && styles.on,
+										isPrev && styles.prev,
+										isNext && styles.next
+									)}
+								>
 									<Title tag={'h3'} url={`/find-recipe/${item.id}`} type={'slogan'}>
 										{item.title.length > 25 ? item.title.substr(0, 25) : item.title}
 									</Title>
@@ -55,7 +63,7 @@ function SwiperWrap({ recipe, category }) {
 				))}
 			</Swiper>
 
-			<Text style={{ padding: '0 10vw' }}>
+			<Text className={clsx(styles.txt_ex)}>
 				{`‘성(性) 정체성’에 관한 주제는 많은 예술가들의 관심사 중에 하나이다. 본인도 이미 오래 전부터 직간접적으로 이 주제를 다루어 왔다. 가장 대표작은 <꼬리를 문 물고기>(2002, 2007년작)이가 있고 여기서 파생된 2인무 <달에서 온 사람>(2003년)도 있다. 또한 <엘리베이터 살인사건>(2007년)에서는 몇 장면에서 부분적 소재로도 다루어졌다. 하지만 내가 바라보는 ‘성(性)’이란 성적취향의 섹슈얼리티나 정체성 혼란에서 오는 관심이 아니다. 그 근간은 칼 구스타프 융의 애니마, 애니무스를 통한 통합된 전체성 회복을 위한 구실이었고, 이는 나카자와 신이치가 말한 신화나 제의(祭儀)를 통해 동물(자연)과의 사이에 상실된 유대관계를 회복함으로써 대칭적인 관계로의 복원을 꿈꾸기 위함이었다. <Full Moon>(2008년), <야만 샤만>(2016년)에서는 이 후자를 따르고 있다.`}
 				<br />
 				<br />

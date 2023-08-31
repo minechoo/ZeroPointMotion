@@ -32,9 +32,9 @@ export async function getStaticProps(opt) {
 	// let url = '';
 	let url = `${baseURL}&api_key=${key}&method=${method_user}&per_page=${num}&user_id=${user}`;
 	//if (opt.type === 'group01')
-	// url = `${baseURL}&api_key=${key}&method=${method_group}&per_page=${num}&user_id=${user_01}`;
+	// url = `${baseURL}&api_key=${key}&method=${method_group}&per_page=${num}&group_id=${user_01}`;
 	// if (opt.type === 'group02')
-	// 	url = `${baseURL}&api_key=${key}&method=${method_group}&per_page=${num}&user_id=${opt.user_02}`;
+	// 	url = `${baseURL}&api_key=${key}&method=${method_group}&per_page=${num}&group_id=${opt.user_02}`;
 
 	const response = await axios.get(url);
 	const items = response.data.photos.photo;
