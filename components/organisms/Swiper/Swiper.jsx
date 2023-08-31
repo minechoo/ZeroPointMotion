@@ -53,7 +53,8 @@ function SwiperWrap({ recipe, category }) {
 										isNext && styles.next
 									)}
 								>
-									<Title tag={'h3'} url={`/find-recipe/${item.id}`} type={'slogan'}>
+									<Title tag={'h3'} type={'slogan'}>
+										{/* url={`/find-recipe/${item.id}`} */}
 										{item.title.length > 25 ? item.title.substr(0, 25) : item.title}
 									</Title>
 								</div>
