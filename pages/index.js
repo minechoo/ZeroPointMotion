@@ -30,9 +30,9 @@ export async function getStaticProps(opt) {
 	const user_01 = '14870955@N23';
 	const user_02 = '14866737@N21';
 	// let url = '';
-	let url = `${baseURL}&api_key=${key}&method=${method_user}&per_page=${num}&user_id=${user}`;
+	//let url = `${baseURL}&api_key=${key}&method=${method_user}&per_page=${num}&user_id=${user}`;
 	//if (opt.type === 'group01')
-	// url = `${baseURL}&api_key=${key}&method=${method_group}&per_page=${num}&group_id=${user_01}`;
+	let url = `${baseURL}&api_key=${key}&method=${method_group}&per_page=${num}&group_id=${user_01}`;
 	// if (opt.type === 'group02')
 	// 	url = `${baseURL}&api_key=${key}&method=${method_group}&per_page=${num}&group_id=${opt.user_02}`;
 
