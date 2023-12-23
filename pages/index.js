@@ -27,12 +27,12 @@ export async function getStaticProps(opt) {
 	//const method_search = 'flickr.photos.search';
 	const num = 50;
 	const user = '199005451@N06';
-	const user_01 = '14870955@N23';
+	const group_1224 = '14878008@N21';
 	const user_02 = '14866737@N21';
 	// let url = '';
 	//let url = `${baseURL}&api_key=${key}&method=${method_user}&per_page=${num}&user_id=${user}`;
 	//if (opt.type === 'group01')
-	let url = `${baseURL}&api_key=${key}&method=${method_group}&per_page=${num}&group_id=${user_01}`;
+	let url = `${baseURL}&api_key=${key}&method=${method_group}&per_page=${num}&group_id=${group_1224}`;
 	// if (opt.type === 'group02')
 	// 	url = `${baseURL}&api_key=${key}&method=${method_group}&per_page=${num}&group_id=${opt.user_02}`;
 
